@@ -34,26 +34,27 @@ I will explain its working via following example(s):
 # JS SCRIPT
 ```
 
+function successCallBack (data) {
+	alert('success');
+}
+
+function failureCallBack () {
+	alert('failure');
+}
+
+function completeCallBack () {
+	alert('complete');
+}
+
+function beforeSendCallBack () {
+	alert('beforeSend');
+	return true;
+}
+
 // Jquery oload function
 $(function(){
 	// Make sure you have included Jquery library file
 	
-	function successCallBack (data) {
-		alert('success');
-	}
-	
-	function failureCallBack () {
-		alert('failure');
-	}
-	
-	function completeCallBack () {
-		alert('complete');
-	}
-	
-	function beforeSendCallBack () {
-		alert('beforeSend');
-		return true;
-	}
 
 	$("#sendForm").click(function(){
 		// Send form data via AJAX
