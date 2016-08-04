@@ -8,14 +8,16 @@ Include latest version of Jquery file in your project
 Include ajax_routine.js in your project after jquery file was included.
 
 call function: sendAJAX('post', url, {});
-params: 
-1- method (post, get) [required]
-2- url (http://google.com) [required]
-3- data object ({name: "waqas"}); [required]
-4- success callback function [optional] 
-5- failure callback function [optional]
-6- complete callback function [optional]
-7- before send callback function [optional]
+
+Function Arguments: 
+
+1. method (post, get) [required]
+2. url (http://google.com) [required]
+3. data object ({name: "waqas"}); [required]
+4. success callback function [optional] 
+5. failure callback function [optional]
+6. complete callback function [optional]
+7. before send callback function [optional]
 
 # How it will work
 I will explain its working via following example(s):
